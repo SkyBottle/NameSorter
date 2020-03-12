@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background-color: #9FB4C7;
+}
+
+#uploader{
+    
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#uploader + label {
+    font-weight: 700;
+    color: white;
+    background-color: #28587B;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 32px;
+    margin-bottom: 40px;
+}
+
+#uploader:focus + label,
+#uploader + label:hover {
+    background-color: #7F7CAF;
+    color: black;
+}
+
+#uploader + label {
+	cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+#main-container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
